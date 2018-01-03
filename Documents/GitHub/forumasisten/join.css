@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color:#fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a, a:visited, a:focus {
+    text-decoration: none;
+}
+
+hr {
+    position: relative;
+    width: 50%;
+    height: 5px;
+    border: none;
+    margin: 9% auto 9% auto;
+    box-shadow: none;
+}
+
+hr:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: #ddd;
+    border-radius: 6px;
+}
+
+::selection {
+    background: #fffcd2;
+    color: #222;
+}
+
+::-moz-selection {
+    background: #fffcd2;
+    color: #222;
+}
+
+::-webkit-selection {
+    background: #fffcd2;
+    color: #222;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border: 2px none #ffffff;
+    border-radius: 33px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+header {
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    background-image: url(img/playstation-pattern.png);
+    background-attachment: fixed;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    color:#444;
+    font-size: calc(100% + 0.5vw);
+    border-bottom: 1px solid #eee;
+}
+
+header img {
+    width: 90px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+section.wrapper {
+    width: 50%;
+    margin:20% auto 10% auto;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: calc(100% + 2vw);
+    text-align: center;
+    line-height: 170%;
+}
+
+section.wrapper b {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.8em;
+    color: rgb(175, 88, 157);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0vw;
+    background-color: #111;
+    background-image: url(img/tiny_grid.png);
+}
+
+footer > .container_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding: 5% 5% 5% 5%;
+}
+
+footer > .container_footer .grid-footer {
+    color: #333;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 100%;
+}
+
+footer > .container_footer .grid-footer:first-child {
+    margin-left: 10%;
+}
+
+footer > .container_footer .grid-footer:first-child ul li {
+    position: relative;
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    font-size: 1.1em;
+}
+
+footer > .container_footer .grid-footer:first-child ul li:before {
+    position: absolute;
+    left: -35px;
+    top: -6px;
+    font-family: consolas;
+    font-size: 29px;
+    font-weight: bold;
+    content: '>';
+    color: rgb(175, 88, 157);
+}
+
+footer > .container_footer .grid-footer:nth-child(2n) ul li {
+    list-style-type: none;
+    margin-left: -35px;
+}
+
+footer > .container_footer .grid-footer:nth-child(2n) ul li svg {
+    width: 20px;
+    display: inline;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: rgb(175, 88, 157);
+}
+
+footer > .container_footer .grid-footer:last-child {
+    margin-left: 15%;
+}
+
+footer > .container_footer .grid-footer:last-child input[type="email"] {
+    border: none;
+    box-shadow: none;
+    padding: 10px 25px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-family: "Source Sans Pro", sans-serif;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+footer > .container_footer .grid-footer:last-child input[type="email"]:focus {
+    outline: none;
+    border: 1px solid #111;
+}
+
+footer > .container_footer .grid-footer:last-child input[type="submit"] {
+    margin-left: 10px;
+    box-shadow: none;
+    border: none;
+    outline: inherit;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(175, 88, 157);
+    color: #fff;
+    border-radius: 4px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+footer > .container_footer .grid-footer:last-child input[type="submit"]:hover {
+    background-color: rgb(75, 29, 66);
+}
